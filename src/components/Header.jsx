@@ -17,7 +17,7 @@ const Header = () => {
         <header className=" absolute w-full z-50 
                         transition-all duration-300 ">
 
-            <div className=" mx-auto container px-4 sm:px-6 lg:px-8
+            <div className=" mx-auto container px-4 sm:px-6 lg:px-6
                                     flex items-center justify-between
                                     h-16 ">
 
@@ -51,7 +51,7 @@ const Header = () => {
 
                 {/* DEsktop navigation*/}
                 <nav className="lg:flex hidden  space-x-8">
-                    {["Home", "About", "Projects", "Experince"].map((item,
+                    {["Home", "About", "MyWork & Experince"].map((item,
                         index) => {
                            
                             const linkTarget = `#${item.toLowerCase()}`
@@ -164,6 +164,8 @@ const Header = () => {
                 </div>
 
             </div>
+
+
             {/*mobile menu*/}
             <motion.div
                 initial={{ opacity: 0, height: 0 }}
@@ -171,10 +173,10 @@ const Header = () => {
                     opacity: isOpen ? 1 : 0,
                     height: isOpen ? "auto" : 0,
                 }}
-                className="md:hidden overflow-hidden mt-5 bg-gray-600 dark:bg-gray-900 shadow-lg
+                className="  mx-4 px-3 md:hidden overflow-hidden mt-5 bg-gray-600 dark:bg-gray-900 shadow-lg
                        pg-4 py-5 space-y-5">
-                <nav className="flex flex-col space-y-3">
-                    {["Home", "About", "Projects", "Experince"].map((item) => {
+                <nav className="flex flex-col  space-y-3">
+                    {["Home", "About", "MyWork & Experince"].map((item) => {
                         const linkTarget =`#${item.toLowerCase()}`
                         return(
 
@@ -188,7 +190,7 @@ const Header = () => {
                 </nav>
                 <div className="pt-4 border-t border-gray-200 
                         dark:border-gray-700">
-                    <div className="flex space-x-7">
+                    <div className="flex   space-x-7">
                         <a href="https://github.com/premchand505">
                             <FiGithub className="h-5 w-5 text-gray-300" />
                         </a>

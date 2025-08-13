@@ -3,12 +3,14 @@ import { motion } from "framer-motion"
 const Herosection = () => {
   return (
     
-    <section className="h-screen bg-gradient-to-b
-    from-violet-900 to-black flex xl:flex-row
-    flex-col-reverse items-center justify-between
-    lg:px-24 px-10 relative overflow-hidden">
+    <section className="min-h-screen bg-gradient-to-b
+    from-blue-900 to-black flex  lg:flex-row lg:gap-20
+    flex-col items-center justify-center
+    lg:px-20 px-10 pt-30 md:pt-0 
+    gap-15 relative overflow-hidden">
 
-<div>
+
+    <div className="">
     <motion.h1 
     initial={{opacity:0, y:80}}
     animate={{opacity:1, y:0}}
@@ -16,12 +18,12 @@ const Herosection = () => {
         type:"spring",
         damping:25,
         stiffness:40,
-        delay:1.3,
-        duration:1.5,
+        delay:1,
+        duration:1.7,
     }}
-    className="text-5xl md:text-7xl
-    lg:text-8xl font-bold z-10 mb-6">
-        Building Fast <br/> Reliable Results
+    className="text-5xl  
+     font-medium z-10 mb-6">
+        Hello,
     </motion.h1>
 
     <motion.h2
@@ -31,12 +33,12 @@ const Herosection = () => {
         type:"spring",
         damping:25,
         stiffness:40,
-        delay:1.5,
-        duration:1.5,
+        delay:1.2,
+        duration:1.7,
     }}
-    className=" text-4xl md:text-4xl lg:text-5xl
-    font-medium z-10 mt-5 mb-5">
-    Hi, I'm PremChand
+    className=" text-6xl md:text-7xl lg:text-6xl
+    font-bold z-10 mt-5 mb-5">
+     Premchand here!
     </motion.h2>
 
     <motion.p 
@@ -46,14 +48,59 @@ const Herosection = () => {
         type:"spring",
         damping:25,
         stiffness:40,
-        delay:1.7,
-        duration:1.5,
+        delay:1.4,
+        duration:1.7,
     }}
-    className="text-2xl font-light ">
-    I'm a passionate developer specializing in web development,<br/> creating user-friendly and innovative solutions.
-    With expertise in React, Vite, <br/>and modern JavaScript, I build responsive and dynamic applications to solve real-world problems.  
+    className="text-xl font-light ">
+    I'm a passionate developer specializing in web development,creating user-friendly and innovative solutions.<br/><br/>
+    With expertise in React, Vite, and modern JavaScript, I build responsive and dynamic applications to solve real-world problems.  
       </motion.p>
+      <div  
+      className="flex flex-col  md:flex-row md:gap-15">
+      <motion.button
+      initial={{opacity:0, y:80}}
+      animate={{opacity:1, y:0}}
+      transition={{
+          type:"spring",
+          damping:25,
+          stiffness:40,
+          delay:1.6,
+          duration:1.7,
+      }}
+      className="h-10 w-30 mt-5 mb-5  text-black rounded-full bg-gradient-to-r from-white to-gray-400">Resume</motion.button>
+      <motion.button
+      initial={{opacity:0, y:80}}
+      animate={{opacity:1, y:0}}
+      transition={{
+          type:"spring",
+          damping:25,
+          stiffness:40,
+          delay:1.7,
+          duration:1.7,
+      }}
+      className="h-10 w-60  mt-5 mb-5 text-black rounded-full text-center bg-gradient-to-r from-white to-gray-400">prem505pop@gmail.com</motion.button>
+      </div>
 </div>
+
+<motion.div 
+initial={{opacity:0, z:-50 , scale:0.25}}
+animate={{opacity:1,z:0 , scale:1}}
+transition={{
+    type:"spring",
+    damping:25,
+    stiffness:40,
+    delay:1.7,
+    duration:1.7,
+}}
+className="  w-60 lg:w-80 ">
+    <img src="gojoprofile.jpeg" alt="" className="w-full h-auto object-cover rounded-lg" />
+</motion.div>
+
+
+
+
+
+
 
     </section>
   )
