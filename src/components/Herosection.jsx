@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 const Herosection = () => {
   return (
     
-    <section className="min-h-screen bg-gradient-to-b
+    <section  id="home" className="min-h-screen bg-gradient-to-b
     from-blue-900 to-black flex  lg:flex-row lg:gap-20
     flex-col items-center justify-center
     lg:px-20 px-10 pt-30 md:pt-0 
@@ -22,7 +22,7 @@ const Herosection = () => {
         duration:1.7,
     }}
     className="text-5xl  
-     font-medium z-10 mb-6">
+     font-medium z-10 my-6">
         Hello,
     </motion.h1>
 
@@ -92,7 +92,7 @@ transition={{
     delay:1.7,
     duration:1.7,
 }}
-className="  w-60 lg:w-80 ">
+className=" my-6 w-60 lg:w-80 ">
     <img src="gojoprofile.jpeg" alt="" className="w-full h-auto object-cover rounded-lg" />
 </motion.div>
 

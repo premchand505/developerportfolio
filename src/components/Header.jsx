@@ -163,6 +163,7 @@ const Header = () => {
                 </div>
 
             </div>
+
             {/*mobile menu*/}
             <motion.div
                 initial={{ opacity: 0, height: 0 }}
@@ -170,9 +171,9 @@ const Header = () => {
                     opacity: isOpen ? 1 : 0,
                     height: isOpen ? "auto" : 0,
                 }}
-                className="md:hidden overflow-hidden mt-5 bg-gray-600 dark:bg-gray-900 shadow-lg
-                       pg-4 py-5 space-y-5">
-                <nav className="flex flex-col space-y-3">
+                className="md:hidden  rounded-lg overflow-hidden mx-1 bg-gray-600 dark:bg-gray-900 shadow-lg
+                       px-5 py-5 space-y-5">
+                <nav className="flex flex-col  space-y-3">
                 {["Home", "About", "MyWork & Experince"].map((item) => {
                         const linkTarget =`#${item.toLowerCase()}`
                         return(
@@ -185,7 +186,7 @@ const Header = () => {
 
 
                 </nav>
-                <div className="pt-4 border-t border-gray-200 
+                <div className="pt-4 border-t  border-gray-200 
                         dark:border-gray-700">
                     <div className="flex space-x-7">
                         <a href="https://github.com/premchand505">

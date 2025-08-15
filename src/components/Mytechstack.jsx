@@ -45,8 +45,8 @@ const Mytechstack = () => {
   ];
 
   return (
-    <section className="min-h-screen bg-gradient-to-b from-blue-900 to-black p-6">
-      <div className="flex  flex-col   items-center justify-center">
+    <section  id="about" className="min-h-screen bg-gradient-to-b from-blue-900 to-black p-6">
+      <div className="flex  flex-col  pt-5  items-center justify-center">
         <motion.h1 
         initial={{opacity:0,y:80}}
         whileInView={{ opacity: 1, y: 0 }}
@@ -58,14 +58,14 @@ const Mytechstack = () => {
         duration:1.7
         }}
         
-        className="text-5xl font-bold py-10 ">My Tech  Stack</motion.h1>
+        className="text-5xl font-bold py-15 ">My Tech  Stack</motion.h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 w-full max-w-7xl">
           {categories.map((category, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, x: -150 }}
+              initial={{ opacity: 0, x: -80 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, amount: 0.2 }}
+              viewport={{ once: true, amount: 0.5}}
               transition={{
                   type: "spring",
                   stiffness: 100,
@@ -73,9 +73,11 @@ const Mytechstack = () => {
                   delay: index*0.2,
                   duration: 0.6,
               }}
-              className="bg-transparent rounded-2xl shadow-lg p-6 flex flex-col items-center hover:scale-105 transition-transform duration-300"
+              className="bg-blue-900/20 rounded-2xl shadow-lg  
+              hover:shadow-lg  hover:shadow-blue-600/80 p-6 flex flex-col 
+              items-center hover:scale-105 transition-transform duration-300"
             >
-              <h2 className="text-xl font-bold mb-4">{category.title}</h2>
+              <h2 className="text-xl font-bold mb-6">{category.title}</h2>
               
               <div className="grid grid-cols-2 gap-4">
                 {category.tech.map((tech, i) => (
