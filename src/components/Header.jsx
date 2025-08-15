@@ -14,10 +14,10 @@ const Header = () => {
     return (
 
 
-        <header className=" fixed w-full z-50 
-                        transition-all duration-300 bg-blue-900  flex">
+        <header className="fixed bg-blue-900 w-full z-50 
+                        transition-all duration-300 ">
 
-            <div className=" mx-auto container px-4 sm:px-6 lg:px-6
+            <div className=" mx-auto container px-4 sm:px-6 lg:px-8
                                     flex items-center justify-between
                                     h-16 ">
 
@@ -40,10 +40,9 @@ const Header = () => {
 
                     
 
-                    <span className="text-xl font-bold bg-gradient-to-r
-                         from-gray-500 to-gray-100 bg-clip-text text-transparent
+                    <span className="text-xl font-bold bg-white  bg-clip-text text-transparent
                          ">
-                        Premchand.DEV</span>
+                        Premchand-dev</span>
 
 
                 </motion.div>
@@ -68,7 +67,7 @@ const Header = () => {
 
                             }}
                             className="relative group text-gray-800 dark:text-gray-200 
-                                        hover:violet-600 dark:hover:text-violet-400 font-medium
+                                        hover:blue-600 dark:hover:text-blue-400 font-medium
                                         transition-colors duration-300 "
                             href= {linkTarget}>
                             {item}
@@ -88,9 +87,9 @@ const Header = () => {
                         initial={{ opacity: 0, scale: 0.5 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ delay: 1.3, duration: 0.9 }}
-                        className="text-gray-700 dark:text-gray-300 hover:text-violet-600
-                                    dark:hover:text-violet-400 transition-colors duration-300 " 
-                                    href="https://github.com/yourusername"
+                        className="text-gray-700 dark:text-gray-300 hover:text-blue-600
+                                    dark:hover:text-blue-400 transition-colors duration-300 " 
+                                    href="https://github.com/premchand505"
                                     target="_blank"
                                     rel="noopener noreferrer">
                         <FiGithub className="w-5 h-5" />
@@ -101,9 +100,9 @@ const Header = () => {
                         initial={{ opacity: 0, scale: 0.5 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ delay: 1.3, duration: 0.9 }}
-                        className="text-gray-700 dark:text-gray-300 hover:text-violet-600
-                                    dark:hover:text-violet-400 transition-colors duration-300 "
-                                    href="https://github.com/yourusername"
+                        className="text-gray-700 dark:text-gray-300 hover:text-blue-600
+                                    dark:hover:text-blue-400 transition-colors duration-300 "
+                                    href="https://www.linkedin.com/in/gpremchand"
                                     target="_blank"
                                     rel="noopener noreferrer">
                         <FiLinkedin className="w-5 h-5" />
@@ -113,9 +112,9 @@ const Header = () => {
                         initial={{ opacity: 0, scale: 0.5 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ delay: 1.3, duration: 0.9 }}
-                        className="text-gray-700 dark:text-gray-300 hover:text-violet-600
-                                    dark:hover:text-violet-400 transition-colors duration-300 " 
-                                    href="https://github.com/yourusername"
+                        className="text-gray-700 dark:text-gray-300 hover:text-blue-600
+                                    dark:hover:text-blue-400 transition-colors duration-300 " 
+                                    href="#"
                                     target="_blank"
                                     rel="noopener noreferrer">
                         <FiTwitter className="w-5 h-5" />
@@ -125,9 +124,9 @@ const Header = () => {
                         initial={{ opacity: 0, scale: 0.5 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ delay: 1.3, duration: 0.9 }}
-                        className="text-gray-700 dark:text-gray-300 hover:text-violet-600
-                                    dark:hover:text-violet-400 transition-colors duration-300 " 
-                                    href="https://github.com/yourusername"
+                        className="text-gray-700 dark:text-gray-300  hover:text-blue-600
+                                    dark:hover:text-blue-400 transition-colors duration-300 " 
+                                    href="#"
                                     target="_blank"
                                     rel="noopener noreferrer">
                         <FiInstagram className="w-5 h-5" />
@@ -147,12 +146,11 @@ const Header = () => {
                         }}
 
                         className="ml-4 px-4 py2 h-10 rounded-md bg-gradient-to-r
-       from-gray-400 to-gray-100 text-violet-700 font-bold
-       hover:from-violet-700 hover:to-purple-700 hover:text-white
+       from-gray-400 to-gray-100 text-black font-bold
+       hover:scale-105 
        transition-all duration-500"
                     >Hire Me</motion.button>
                 </div>
-
 
                 {/*mobile icon button*/}
                 <div className="md:hidden  flex items-center">
@@ -165,8 +163,6 @@ const Header = () => {
                 </div>
 
             </div>
-
-
             {/*mobile menu*/}
             <motion.div
                 initial={{ opacity: 0, height: 0 }}
@@ -174,10 +170,10 @@ const Header = () => {
                     opacity: isOpen ? 1 : 0,
                     height: isOpen ? "auto" : 0,
                 }}
-                className="  mx-4 px-3 md:hidden overflow-hidden mt-5 bg-gray-600 dark:bg-gray-900 shadow-lg
+                className="md:hidden overflow-hidden mt-5 bg-gray-600 dark:bg-gray-900 shadow-lg
                        pg-4 py-5 space-y-5">
-                <nav className="flex flex-col  space-y-3">
-                    {["Home", "About", "MyWork & Experince"].map((item) => {
+                <nav className="flex flex-col space-y-3">
+                {["Home", "About", "MyWork & Experince"].map((item) => {
                         const linkTarget =`#${item.toLowerCase()}`
                         return(
 
@@ -191,7 +187,7 @@ const Header = () => {
                 </nav>
                 <div className="pt-4 border-t border-gray-200 
                         dark:border-gray-700">
-                    <div className="flex   space-x-7">
+                    <div className="flex space-x-7">
                         <a href="https://github.com/premchand505">
                             <FiGithub className="h-5 w-5 text-gray-300" />
                         </a>
@@ -211,8 +207,8 @@ const Header = () => {
                             openContactForm()
                         }}
                         className="mt-4 block w-full px-4 py-2
-                            rounded-lg bg-gradient-to-r from-violet-600 
-                            to-violet-400 font-bold">
+                            rounded-lg bg-gradient-to-r from-blue-600 
+                            to-blue-400 font-bold">
                         Contact Me</button>
                 </div>
             </motion.div>
@@ -262,8 +258,8 @@ const Header = () => {
                                         placeholder="Your Name"
                                         className="w-full px-4 py-2 border
                                      border-gray-600 rounded-lg focus:ring-2
-                                        focus:ring-violet-600
-                                        focus:border-violet-500 bg-gray-700"/>
+                                        focus:ring-blue-600
+                                        focus:border-blue-500 bg-gray-700"/>
                                 </div>
 
 
@@ -277,8 +273,8 @@ const Header = () => {
                                         placeholder="Your Email"
                                         className="w-full px-4 py-2 border
                                                    border-gray-600 rounded-lg focus:ring-2
-                                           focus:ring-violet-600
-                                                focus:border-violet-500 bg-gray-700"/>
+                                           focus:ring-blue-600
+                                                focus:border-blue-500 bg-gray-700"/>
                                 </div>
 
                                 <div>
@@ -292,17 +288,17 @@ const Header = () => {
                                         placeholder="How can we help you?"
                                         className="w-full px-4 py-2 border
                                       border-gray-600 rounded-lg focus:ring-2
-                                       focus:ring-violet-600
-                                       focus:border-violet-500 bg-gray-700"/>
+                                       focus:ring-blue-600
+                                       focus:border-blue-500 bg-gray-700"/>
                                 </div>
                                 <motion.button
                                     type="submit"
                                     whileHover={{ scale: 1.03 }}
                                     whileTap={{ scale: 0.97 }}
                                     className="w-full px-4 py-2 bg-gradient-to-r
-                                  from-violet-600 to-violet-400
-                                   hover:to-purple-700 transition-all duration-300 rounded-lg shadow-md
-                                      hover:shadow-lg  hover:shadow-violet-600/50">Send Message</motion.button>
+                                  from-blue-600 to-blue-400
+                                   hover:to-blue-700 transition-all duration-300 rounded-lg shadow-md
+                                      hover:shadow-lg  hover:shadow-blue-600/50">Send Message</motion.button>
 
                             </form>
 
