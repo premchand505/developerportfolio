@@ -14,8 +14,8 @@ const Header = () => {
     return (
 
 
-        <header className=" absolute w-full z-50 
-                        transition-all duration-300 ">
+        <header className=" fixed w-full z-50 
+                        transition-all duration-300 bg-blue-900  flex">
 
             <div className=" mx-auto container px-4 sm:px-6 lg:px-6
                                     flex items-center justify-between
@@ -74,7 +74,7 @@ const Header = () => {
                             {item}
 
                             <span className="absolute bottom-0 left-0 w-0 h-0.5
-                                            bg-violet-600 group-hover:w-full transition-all
+                                            bg-blue-600 group-hover:w-full transition-all
                                             duration-300"></span>
 
                         </motion.a>
@@ -152,6 +152,7 @@ const Header = () => {
        transition-all duration-500"
                     >Hire Me</motion.button>
                 </div>
+
 
                 {/*mobile icon button*/}
                 <div className="md:hidden  flex items-center">

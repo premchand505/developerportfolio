@@ -12,7 +12,7 @@ const Herosection = () => {
 
     <div className="">
     <motion.h1 
-    initial={{opacity:0, y:80}}
+    inital={{opacity:0, y:80}}
     animate={{opacity:1, y:0}}
     transition={{
         type:"spring",
