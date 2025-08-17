@@ -50,7 +50,7 @@ const Header = () => {
 
                 {/* DEsktop navigation*/}
                 <nav className="lg:flex hidden  space-x-8">
-                    {["Home", "About", "MyWork & Experince"].map((item,
+                    {["Home", "About", "MyWork&Experince"].map((item,
                         index) => {
                            
                             const linkTarget = `#${item.toLowerCase()}`

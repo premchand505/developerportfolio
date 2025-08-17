@@ -6,7 +6,7 @@ const Herosection = () => {
     <section  id="home" className="min-h-screen bg-gradient-to-b
     from-blue-900 to-black flex  lg:flex-row lg:gap-20
     flex-col items-center justify-center
-    lg:px-20 px-10 pt-30 md:pt-0 
+    lg:px-20 px-10 pt-40 md:pt-0 
     gap-15 relative overflow-hidden">
 
 
