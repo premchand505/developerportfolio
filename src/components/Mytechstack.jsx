@@ -60,7 +60,7 @@ const Mytechstack = () => {
             stiffness: 40,
             duration: 1.7
           }}
-          className="relative inline-block text-5xl font-bold py-10 group"
+          className="relative block text-5xl font-bold py-10 group"
         >
           My Tech Stack
           <motion.span
