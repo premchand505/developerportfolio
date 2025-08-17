@@ -1,5 +1,6 @@
 
 import { motion } from "framer-motion"
+import { FiArrowRight } from "react-icons/fi"
 const Herosection = () => {
   return (
     
@@ -67,7 +68,9 @@ const Herosection = () => {
           delay:1.6,
           duration:1.7,
       }}
-      className="h-10 w-30 mt-5 mb-5  text-black rounded-full bg-gradient-to-r from-white to-gray-400">Resume</motion.button>
+      className="h-10 w-25 mt-5 mb-5  flex justify-around items-center gap-2 text-black rounded-lg bg-gradient-to-r from-white to-gray-400">Resume
+      <FiArrowRight/>
+      </motion.button>
       <motion.button
       initial={{opacity:0, y:80}}
       animate={{opacity:1, y:0}}
@@ -78,7 +81,9 @@ const Herosection = () => {
           delay:1.7,
           duration:1.7,
       }}
-      className="h-10 w-60  mt-5 mb-5 text-black rounded-full text-center bg-gradient-to-r from-white to-gray-400">prem505pop@gmail.com</motion.button>
+      className="h-10 w-60  mt-5 mb-5 flex justify-around items-center text-black rounded-lg text-center bg-gradient-to-r from-white to-gray-400">prem505pop@gmail.com
+      <FiArrowRight/>
+      </motion.button>
       </div>
 </div>
 
