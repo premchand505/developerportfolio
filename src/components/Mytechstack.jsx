@@ -1,4 +1,5 @@
 import React from "react";
+import About from "./About";
 import { motion } from "framer-motion";
 import { FaReact, FaNodeJs, FaPython, FaGitAlt, FaGithub, FaDocker } from "react-icons/fa";
 import { SiNextdotjs, SiJavascript, SiTailwindcss, SiExpress, SiMongodb, SiPostgresql, SiTensorflow, SiScikitlearn, SiPandas, SiVercel } from "react-icons/si";
@@ -46,7 +47,8 @@ const Mytechstack = () => {
   ];
 
   return (
-    <section id="about" className="min-h-70vh bg-gradient-to-b from-black to-blue-900 p-6">
+    <section id="aboutme" className="min-h-screen bg-gradient-to-r overflow-hidden to-black from-blue-900 p-16">
+      <About/>
       <div className="flex flex-col pt-5 items-center justify-center">
         
         {/* Heading with underline animation */}
@@ -60,16 +62,17 @@ const Mytechstack = () => {
             stiffness: 40,
             duration: 1.7
           }}
-          className="relative inline-block  text-5xl font-bold py-10 group"
+          className="relative inline-block  text-3xl font-semibold py-10 group"
         >
           My Tech Stack
-          <motion.span
-            initial={{ width: 0 }}
+           {/* <motion.span
+            initial={{ width: 0  }}
             whileInView={{ width: "100%" }}
             viewport={{ once: true }}
             transition={{ duration: 1, ease: "easeInOut", delay: 0.5 }}
-            className="absolute bottom-0 left-0 h-2 rounded-lg bg-blue-600 group-hover:w-full transition-all duration-300"
+            className="absolute bottom-0 left-0 h-1 rounded-lg bg-neutral-300 group-hover:w-full transition-all duration-300"
           ></motion.span>
+          */}
         </motion.h1>
 
         {/* Tech grid */}

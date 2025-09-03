@@ -35,7 +35,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section id='myworkexperience' className='min-h-screen bg-gradient-to-b from-blue-900 to-black'>
+    <section id='mywork' className='min-h-screen  overflow-hidden bg-gradient-to-r from-blue-900 to-black'>
       <div className="flex flex-col pt-5 items-center justify-center gap-6">
         
         {/* Heading with underline animation */}
@@ -49,20 +49,21 @@ const Projects = () => {
             stiffness: 40,
             duration: 1.7
           }}
-          className="relative inline-block text-5xl font-bold py-10 text-white group"
+          className="relative inline-block text-3xl font-semibold py-10 text-white group"
         >
           My Projects
-          <motion.span
-            initial={{ width: 0 }}
+         {/* <motion.span
+            initial={{ width: 0  }}
             whileInView={{ width: "100%" }}
             viewport={{ once: true }}
             transition={{ duration: 1, ease: "easeInOut", delay: 0.5 }}
-            className="absolute bottom-0 left-0 h-2 rounded-lg bg-blue-600 group-hover:w-full transition-all duration-300"
+            className="absolute bottom-0 left-0 h-1 rounded-lg bg-neutral-300 group-hover:w-full transition-all duration-300"
           ></motion.span>
+          */}
         </motion.h1>
 
         {/* Projects List */}
-        <div className="max-w-6xl rounded-lg bg-white/5 backdrop-blur-sm w-full py-6 px-6 space-y-16">
+        <div className="max-w-6xl rounded-lg bg-transparent backdrop-blur-sm w-full py-6 px-6 space-y-16">
           {projects.map((project, index) => (
             <motion.div
               key={index}

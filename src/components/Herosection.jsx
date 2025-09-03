@@ -4,10 +4,10 @@ import { FiArrowRight } from "react-icons/fi"
 const Herosection = () => {
   return (
     
-    <section  id="home" className="min-h-screen bg-gradient-to-b
+    <section  id="home" className="min-h-screen bg-gradient-to-r
     from-blue-900 to-black flex  lg:flex-row lg:gap-20
     flex-col items-center justify-center
-    lg:px-20 px-10 pt-40 md:pt-0 
+    lg:px-20 px-10 pt-40  
     gap-15 relative overflow-hidden">
 
 
@@ -52,7 +52,7 @@ const Herosection = () => {
         delay:1.4,
         duration:1.7,
     }}
-    className="text-xl font-light ">
+    className="text-xl text-slate-300 font-light ">
     I'm a passionate developer specializing in web development,creating user-friendly and innovative solutions.<br/><br/>
     With expertise in React, Vite, and modern JavaScript, I build responsive and dynamic applications to solve real-world problems.  
       </motion.p>
