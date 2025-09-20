@@ -1,7 +1,11 @@
 
 import { motion } from "framer-motion"
 import { FiArrowRight } from "react-icons/fi"
+
 const Herosection = () => {
+    const openResume =()=>{
+        window.open('/GPREM_resume.pdf ' ,'_blank' );
+    };
   return (
     
     <section  id="home" className="min-h-screen bg-gradient-to-r
@@ -13,7 +17,7 @@ const Herosection = () => {
 
     <div className="">
     <motion.h1 
-    inital={{opacity:0, y:80}}
+    initial={{opacity:0, y:80}}
     animate={{opacity:1, y:0}}
     transition={{
         type:"spring",
@@ -68,10 +72,15 @@ const Herosection = () => {
           delay:1.6,
           duration:1.7,
       }}
+      onClick={openResume}
       className="h-10 w-25 mt-5 mb-5  flex justify-around items-center gap-2 text-black rounded-lg bg-gradient-to-r from-white to-gray-400">Resume
+
       <FiArrowRight/>
       </motion.button>
-      <motion.button
+
+
+      <motion.a
+      href="mailto:prem595pop@gmail.com"
       initial={{opacity:0, y:80}}
       animate={{opacity:1, y:0}}
       transition={{
@@ -83,7 +92,7 @@ const Herosection = () => {
       }}
       className="h-10 w-60  mt-5 mb-5 flex justify-around items-center text-black rounded-lg text-center bg-gradient-to-r from-white to-gray-400">prem505pop@gmail.com
       <FiArrowRight/>
-      </motion.button>
+      </motion.a>
       </div>
 </div>
 
@@ -98,7 +107,7 @@ transition={{
     duration:1.7,
 }}
 className=" my-6 w-60 lg:w-80 ">
-    <img src="gojoprofile.jpeg" alt="" className="w-full h-auto object-cover rounded-lg" />
+    <img src="profile.jpg" alt="" className="w-full h-auto object-cover rounded-lg" />
 </motion.div>
 
 
