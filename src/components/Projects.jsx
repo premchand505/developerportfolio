@@ -3,35 +3,30 @@ import { motion } from 'framer-motion';
 import { FiArrowRight } from 'react-icons/fi';
 
 const projects = [
-  {
-    title: "Haptic Video Generator",
-    description:
-      "A full-stack web app that converts video audio into dynamic haptic feedback patterns. Built with React, FastAPI, FFmpeg, and Librosa. Users can preview haptics in-browser and download JSON/AHAP bundles.",
-    image: "Cover-Page.png", // replace with your actual image
-    link: "#"
-  },
-  {
-    title: "AI Chatbot",
-    description:
-      "An intelligent chatbot powered by NLP and LLMs to answer queries, provide recommendations, and act as a personal assistant. Built with React, Node.js, and OpenAI API.",
-    image: "Cover-Page.png",
-    link: "#"
-  },
-  {
-    title: "AI/ML Haptic Generation Model",
-    description:
-      "A research-driven ML model that maps emotions, intensity, and audio features to cinematic haptic patterns. Incorporates deep learning with TensorFlow & PyTorch for real-time haptic synthesis.",
-    image: "Cover-Page.png",
-    link: "#"
-  },
-  {
-    title: "Portfolio Platform",
-    description:
-      "My personal developer portfolio showcasing projects, skills, and experiences. Built with React, TailwindCSS, Framer Motion, and deployed with Vercel.",
-    image: "Cover-Page.png",
-    link: "#"
-  }
-];
+  
+    {
+      title: "Haptic Video Generator",
+      description:
+        "A full-stack web app that converts video audio into dynamic haptic feedback patterns. Built with React, FastAPI, FFmpeg, and Librosa. Users can preview haptics in-browser and download JSON/AHAP bundles.",
+      image: "haptic-coverpage.png", // replace with your actual image
+      link: "https://hapticvideo.vercel.app/"
+    },
+    {
+      title: "EventSphere",
+      description:
+        "A social event-hosting platform where users can create and join events, explore nearby events using interactive maps, and engage in live chat rooms during events. Built with React, Node.js, Socket.IO, and Map APIs.",
+      image: "eventsphere-cover.png", // update with actual image
+      link: "https://github.com/"
+    },
+    {
+      title: "Fitness Edge Landingpage",
+      description:
+        "Landing page for Fitness Edge, featuring modern UI, subscription details, and a showcase of features like calorie logging, personalized plans, and mentorship integration. Built with React and TailwindCSS.",
+      image: "gym-coverpage.png", // update with actual image
+      link: "https://fitnessedge-t1c3.vercel.app/"
+    }
+  ];
+  
 
 const Projects = () => {
   return (
